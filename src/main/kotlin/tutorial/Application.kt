@@ -2,19 +2,18 @@ package tutorial
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
-import org.springframework.context.annotation.Bean
-import org.springframework.context.annotation.Configuration
+import org.springframework.boot.autoconfigure.SpringBootApplication
 
 /**
  * The main entry point to the application
  */
 @EnableAutoConfiguration
-@Configuration
-class Application {
+@SpringBootApplication
+class Application /*{
 
-    @Bean
-    fun controller() = FirstController()
-}
+//    @Bean
+//    fun controller() = FirstController()
+}*/
 
 /**
  * Run the application
