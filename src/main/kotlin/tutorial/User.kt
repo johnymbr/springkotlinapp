@@ -1,17 +1,15 @@
 package tutorial
 
-import java.time.Instant
-
 /**
- * Representation of a User
- * @property username The username of the user
- * @property screenName The screen name of the user
- * @property email The email address of the user
- * @property registered When the user registered with us
+ * Representation of User
+ * @property firstName
+ * @property lastName
+ * @property email
+ * @property phone
  */
 data class User(
-        val username: String,
-        val screenName: String,
-        val email: String,
-        val registered: Instant
+        var firstName: String = "",
+        val lastName: String = "",
+        val email: String = "",
+        val phone: String = ""
 )

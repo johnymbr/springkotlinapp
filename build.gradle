@@ -42,6 +42,7 @@ dependencies {
     }
     compile "org.springframework.boot:spring-boot-starter-jetty"
     compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-jdbc"
 
     // Jackson Dependencies
     compile "com.fasterxml.jackson.core:jackson-annotations"
@@ -50,6 +51,9 @@ dependencies {
     runtime "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
     runtime "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
     runtime "com.fasterxml.jackson.module:jackson-module-kotlin"
+
+    // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+    compile "org.hsqldb:hsqldb"
 }
 
 task wrapper(type: Wrapper) {
